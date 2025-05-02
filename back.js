@@ -114,6 +114,20 @@ video.addEventListener('click',function(){
 })
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const page4 = document.querySelector(".page4");
+    const nav = document.querySelector("nav");
+  
+    page4.addEventListener("mouseenter", function () {
+      nav.classList.add("hidden");
+    });
+  
+    page4.addEventListener("mouseleave", function () {
+      nav.classList.remove("hidden");
+    });
+  });
+  
+
 
 
 navAnimation();
